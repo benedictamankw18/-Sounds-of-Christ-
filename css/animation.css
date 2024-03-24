@@ -1,0 +1,24 @@
+.profile{
+    transition: transform 1s ease-in-out;
+}
+.profile:hover, .profile:focus{
+    transform: scale(1.1, 1.1);
+}
+
+.team-member img{
+    transition: transform 1s ease-in-out;
+    min-width: 100%;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+.team-member img:hover{
+    transform: translate(-0%, -0%);
+    image-rendering: auto;
+    image-orientation: from-image;
+    image-resolution: 22;
+    transform: scale(1.1);
+}
+
+.card{
+    overflow: hidden;
+}

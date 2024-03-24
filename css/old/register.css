@@ -1,0 +1,98 @@
+/* Reset some default styles */
+body, h1, p, form, label, input, button, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a glass-like background with your color codes */
+body {
+    background: rgba(220, 220, 220, 0.7); /* Light gray background */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.9); /* Lighter white background */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Shadow for the box */
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Header styles with your church's blue color */
+h1 {
+    color: #007bff; /* Church's blue color */
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styles */
+p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Form styles with lighter background */
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #007bff; /* Church's blue color */
+}
+
+/* Input field styles with lighter background */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none; /* Remove borders */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Lighter white background for inputs */
+}
+
+/* Button styles with your church's red color */
+button[type="submit"] {
+    background-color: #dc3545; /* Church's red color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #c82333; /* Slightly darker red on hover */
+}
+
+/* Login link styles with your church's blue color */
+a {
+    color: #007bff; /* Church's blue color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Inspirational message styles */
+.inspiration {
+    margin-top: 20px;
+    font-style: italic;
+    color: #555;
+}

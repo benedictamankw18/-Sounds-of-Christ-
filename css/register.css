@@ -1,0 +1,1230 @@
+/* Reset some default styles */
+body, h1, p, form, label, input, button, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a glass-like background with your color codes */
+body {
+    background: rgba(220, 220, 220, 0.7); /* Light gray background */
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.9); /* Lighter white background */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Shadow for the box */
+    max-width: 450px;
+    width: 100%;
+}
+
+/* Header styles with your church's blue color */
+h1 {
+    color: #007bff; /* Church's blue color */
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styles */
+p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Form styles with lighter background */
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #007bff; /* Church's blue color */
+}
+
+/* Input field styles with lighter background */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none; /* Remove borders */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Lighter white background for inputs */
+}
+
+input:hover{
+    border: 1px #555 solid;
+}
+
+/* Button styles with your church's red color */
+button[type="submit"] {
+    background-color: #dc3545; /* Church's red color */
+    color: #fff;
+    padding: 15px 198px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+button[type="submit"]:hover {
+    background-color: #c82333; /* Slightly darker red on hover */
+}
+
+/* Login link styles with your church's blue color */
+a {
+    color: #007bff; /* Church's blue color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #0367d3;
+}
+
+/* Inspirational message styles */
+.inspiration {
+    margin-top: 20px;
+    font-style: italic;
+    color: #555;
+}
+
+.home{
+    float: left;
+    margin: 0px;
+    padding-bottom: 10px;
+    padding-right: 450px;
+}
+
+.home a{
+    font-weight: 700;
+    color:#dc3545;
+    text-decoration: none;
+}
+
+
+
+
+@media screen and (min-width: 840px) and (max-width: 2000px) {
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-top: 200px;
+        padding-bottom: 100px;
+        bottom: 100px;
+        /* position: relative; */
+    }
+
+    .login-box {
+        background: rgba(255, 255, 255, 0.9); /* Lighter white background */
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Shadow for the box */
+        max-width: 800px;
+        max-height: 1500px;
+        position: relative;
+        margin-bottom: 100px;
+        width: 100%;
+    }
+
+    /* Header styles with your church's blue color */
+    h1 {
+        color: #007bff; /* Church's blue color */
+        font-size: 38px;
+        margin-bottom: 10px;
+        margin-top: 70px;
+    }
+
+    /* Paragraph styles */
+    p {
+        color: #333;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Input field styles with lighter background */
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none; /* Remove borders */
+        border-radius: 5px;
+        height: 70px;
+        font-size: 30px;
+        background-color: rgba(255, 255, 255, 0.8); /* Lighter white background for inputs */
+    }
+
+    
+    button[type="submit"] {
+    padding: 30px 327px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 20px;
+    font-weight: bold;
+    font-size: 25px;
+    }
+
+    label{
+        font-size: 25px;
+    }
+
+    .home a{
+        font-size: 25px;
+    }
+    p{
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (min-width: 840px) and (max-width: 1440px) {
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-top: 400px;
+        padding-bottom: 300px;
+        bottom: 100px;
+        /* position: relative; */
+    }
+
+    .login-box {
+        background: rgba(255, 255, 255, 0.9); /* Lighter white background */
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Shadow for the box */
+        max-width: 800px;
+        max-height: 1500px;
+        position: relative;
+        margin-bottom: 100px;
+        width: 100%;
+    }
+
+    /* Header styles with your church's blue color */
+    h1 {
+        color: #007bff; /* Church's blue color */
+        font-size: 38px;
+        margin-bottom: 10px;
+        margin-top: 70px;
+    }
+
+    /* Paragraph styles */
+    p {
+        color: #333;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Input field styles with lighter background */
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none; /* Remove borders */
+        border-radius: 5px;
+        height: 70px;
+        font-size: 30px;
+        background-color: rgba(255, 255, 255, 0.8); /* Lighter white background for inputs */
+    }
+
+    
+    button[type="submit"] {
+    padding: 30px 327px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 20px;
+    font-weight: bold;
+    font-size: 25px;
+    }
+
+    label{
+        font-size: 25px;
+    }
+
+    .home a{
+        font-size: 25px;
+    }
+    p{
+        font-size: 25px;
+    }
+
+}
+
+
+@media screen and (min-width: 840px) and (max-width: 1050px) {
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-top: 250px;
+        padding-bottom: 150px;
+        bottom: 100px;
+        /* position: relative; */
+    }
+
+    .login-box {
+        background: rgba(255, 255, 255, 0.9); /* Lighter white background */
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Shadow for the box */
+        max-width: 600px;
+        max-height: 1500px;
+        position: relative;
+        margin-bottom: 100px;
+        width: 100%;
+    }
+
+    /* Header styles with your church's blue color */
+    h1 {
+        color: #007bff; /* Church's blue color */
+        font-size: 28px;
+        margin-bottom: 10px;
+        margin-top: 50px;
+    }
+
+    /* Paragraph styles */
+    p {
+        color: #333;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    /* Input field styles with lighter background */
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none; /* Remove borders */
+        border-radius: 5px;
+        height: 45px;
+        font-size: 20px;
+        background-color: rgba(255, 255, 255, 0.8); /* Lighter white background for inputs */
+    }
+
+    
+    button[type="submit"] {
+        padding: 30px 240px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 20px 20px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    label{
+        font-size: 20px;
+    }
+
+    .home a{
+        font-size: 20px;
+    }
+    p{
+        font-size: 18px;
+    }
+
+}
+
+
+@media screen and (min-width: 80px) and (max-width: 840px) {
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        bottom: 100px;
+        /* position: relative; */
+    }
+
+    .login-box {
+        background: rgba(255, 255, 255, 0.9); /* Lighter white background */
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Shadow for the box */
+        max-width: 450px;
+        width: 100%;
+    }
+
+    /* Header styles with your church's blue color */
+    h1 {
+        color: #007bff; /* Church's blue color */
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    /* Paragraph styles */
+    p {
+        color: #333;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    /* Form styles with lighter background */
+    form {
+        text-align: left;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #007bff; /* Church's blue color */
+    }
+
+    /* Input field styles with lighter background */
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none; /* Remove borders */
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.8); /* Lighter white background for inputs */
+    }
+
+    input:hover{
+        border: 1px #555 solid;
+    }
+
+    /* Button styles with your church's red color */
+    button[type="submit"] {
+        background-color: #dc3545; /* Church's red color */
+        color: #fff;
+        padding: 15px 198px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        margin: 20px 0px;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #c82333; /* Slightly darker red on hover */
+    }
+
+    /* Login link styles with your church's blue color */
+    a {
+        color: #007bff; /* Church's blue color */
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #0367d3;
+    }
+
+    /* Inspirational message styles */
+    .inspiration {
+        margin-top: 20px;
+        font-style: italic;
+        color: #555;
+    }
+
+    .home{
+        float: left;
+        margin: 0px;
+        padding-bottom: 10px;
+        padding-right: 450px;
+    }
+
+    .home a{
+        font-weight: 700;
+        color:#dc3545;
+        text-decoration: none;
+    }
+
+
+}
+
+
+@media screen and (min-width: 80px) and (max-width: 540px) {
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        bottom: 100px;
+        /* position: relative; */
+    }
+
+    .login-box {
+        background: rgba(255, 255, 255, 0.9); /* Lighter white background */
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Shadow for the box */
+        max-width: 350px;
+        width: 100%;
+    }
+
+    /* Header styles with your church's blue color */
+    h1 {
+        color: #007bff; /* Church's blue color */
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    /* Paragraph styles */
+    p {
+        color: #333;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    /* Form styles with lighter background */
+    form {
+        text-align: left;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #007bff; /* Church's blue color */
+    }
+
+    /* Input field styles with lighter background */
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none; /* Remove borders */
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.8); /* Lighter white background for inputs */
+    }
+
+    input:hover{
+        border: 1px #555 solid;
+    }
+
+    /* Button styles with your church's red color */
+    button[type="submit"] {
+        background-color: #dc3545; /* Church's red color */
+        color: #fff;
+        padding: 15px 147px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        margin: 20px 0px;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #c82333; /* Slightly darker red on hover */
+    }
+
+    /* Login link styles with your church's blue color */
+    a {
+        color: #007bff; /* Church's blue color */
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #0367d3;
+    }
+
+    /* Inspirational message styles */
+    .inspiration {
+        margin-top: 20px;
+        font-style: italic;
+        color: #555;
+    }
+
+    .home{
+        float: left;
+        margin: 0px;
+        padding-bottom: 10px;
+        padding-right: 450px;
+    }
+
+    .home a{
+        font-weight: 700;
+        color:#dc3545;
+        text-decoration: none;
+    }
+
+
+}
+
+
+@media screen and (min-width: 80px) and (max-width: 450px) {
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        bottom: 100px;
+        margin-left: 10%;
+        /* position: relative; */
+    }
+
+.login-box {
+    background: rgba(255, 255, 255, 0.9); /* Lighter white background */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Shadow for the box */
+    max-width: 300px;
+    width: 100%;
+}
+
+/* Header styles with your church's blue color */
+h1 {
+    color: #007bff; /* Church's blue color */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styles */
+p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Form styles with lighter background */
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #007bff; /* Church's blue color */
+}
+
+/* Input field styles with lighter background */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none; /* Remove borders */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Lighter white background for inputs */
+}
+
+input:hover{
+    border: 1px #555 solid;
+}
+
+/* Button styles with your church's red color */
+button[type="submit"] {
+    background-color: #dc3545; /* Church's red color */
+    color: #fff;
+    padding: 15px 123px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+button[type="submit"]:hover {
+    background-color: #c82333; /* Slightly darker red on hover */
+}
+
+/* Login link styles with your church's blue color */
+a {
+    color: #007bff; /* Church's blue color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #0367d3;
+}
+
+/* Inspirational message styles */
+.inspiration {
+    margin-top: 20px;
+    font-style: italic;
+    color: #555;
+}
+
+.home{
+    float: left;
+    margin: 0px;
+    padding-bottom: 10px;
+    padding-right: 450px;
+}
+
+.home a{
+    font-weight: 700;
+    color:#dc3545;
+    text-decoration: none;
+}
+
+
+}
+
+
+@media screen and (min-width: 80px) and (max-width: 400px) {
+    
+    .container {
+        margin: 0px 0px 0px 0px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        bottom: 100px;
+        margin-left: 25%;
+        position:initial;
+        
+    }
+
+.login-box {
+    background: rgba(255, 255, 255, 0.9); /* Lighter white background */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Shadow for the box */
+    width: 200px;
+    width: 100%;
+}
+
+/* Header styles with your church's blue color */
+h1 {
+    color: #007bff; /* Church's blue color */
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styles */
+p {
+    color: #333;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+/* Form styles with lighter background */
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #007bff; /* Church's blue color */
+    font-size: 10px;
+}
+
+/* Input field styles with lighter background */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none; /* Remove borders */
+    border-radius: 5px;
+    font-size: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Lighter white background for inputs */
+}
+
+input:hover{
+    border: 1px #555 solid;
+}
+
+/* Button styles with your church's red color */
+button[type="submit"] {
+    background-color: #dc3545; /* Church's red color */
+    color: #fff;
+    padding: 15px 39%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 0px;
+    font-size: 10px;
+}
+
+}
+
+
+@media screen and (width: 600px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-top: 0px;
+        padding-bottom: 250px;
+        margin-top: 0px;
+        /* bottom: 100px; */
+        /* position: relative; */
+    }
+
+    .login-box {
+        background: rgba(255, 255, 255, 0.9); /* Lighter white background */
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Shadow for the box */
+        max-width: 450px;
+        width: 100%;
+    }
+
+    /* Header styles with your church's blue color */
+    h1 {
+        color: #007bff; /* Church's blue color */
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    /* Paragraph styles */
+    p {
+        color: #333;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    /* Form styles with lighter background */
+    form {
+        text-align: left;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #007bff; /* Church's blue color */
+    }
+
+    /* Input field styles with lighter background */
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none; /* Remove borders */
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.8); /* Lighter white background for inputs */
+    }
+
+    input:hover{
+        border: 1px #555 solid;
+    }
+
+    /* Button styles with your church's red color */
+    button[type="submit"] {
+        background-color: #dc3545; /* Church's red color */
+        color: #fff;
+        padding: 15px 198px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        margin: 20px 0px;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #c82333; /* Slightly darker red on hover */
+    }
+
+    /* Login link styles with your church's blue color */
+    a {
+        color: #007bff; /* Church's blue color */
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #0367d3;
+    }
+
+    /* Inspirational message styles */
+    .inspiration {
+        margin-top: 20px;
+        font-style: italic;
+        color: #555;
+    }
+
+    .home{
+        float: left;
+        margin: 0px;
+        padding-bottom: 10px;
+        padding-right: 450px;
+    }
+
+    .home a{
+        font-weight: 700;
+        color:#dc3545;
+        text-decoration: none;
+    }
+
+}
+
+
+@media screen and (width: 712px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-top: 0px;
+        padding-bottom: 250px;
+        margin-top: 0px;
+        /* bottom: 100px; */
+        /* position: relative; */
+    }
+
+    .login-box {
+        background: rgba(255, 255, 255, 0.9); /* Lighter white background */
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Shadow for the box */
+        max-width: 450px;
+        width: 100%;
+    }
+
+    /* Header styles with your church's blue color */
+    h1 {
+        color: #007bff; /* Church's blue color */
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    /* Paragraph styles */
+    p {
+        color: #333;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    /* Form styles with lighter background */
+    form {
+        text-align: left;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #007bff; /* Church's blue color */
+    }
+
+    /* Input field styles with lighter background */
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none; /* Remove borders */
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.8); /* Lighter white background for inputs */
+    }
+
+    input:hover{
+        border: 1px #555 solid;
+    }
+
+    /* Button styles with your church's red color */
+    button[type="submit"] {
+        background-color: #dc3545; /* Church's red color */
+        color: #fff;
+        padding: 15px 198px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        margin: 20px 0px;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #c82333; /* Slightly darker red on hover */
+    }
+
+    /* Login link styles with your church's blue color */
+    a {
+        color: #007bff; /* Church's blue color */
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #0367d3;
+    }
+
+    /* Inspirational message styles */
+    .inspiration {
+        margin-top: 20px;
+        font-style: italic;
+        color: #555;
+    }
+
+    .home{
+        float: left;
+        margin: 0px;
+        padding-bottom: 10px;
+        padding-right: 450px;
+    }
+
+    .home a{
+        font-weight: 700;
+        color:#dc3545;
+        text-decoration: none;
+    }
+
+}
+
+
+@media screen and (width: 800px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-top: 0px;
+        padding-bottom: 250px;
+        margin-top: 0px;
+        /* position: relative; */
+    }
+
+    .login-box {
+        background: rgba(255, 255, 255, 0.9); /* Lighter white background */
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Shadow for the box */
+        max-width: 450px;
+        width: 100%;
+    }
+
+    /* Header styles with your church's blue color */
+    h1 {
+        color: #007bff; /* Church's blue color */
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    /* Paragraph styles */
+    p {
+        color: #333;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    /* Form styles with lighter background */
+    form {
+        text-align: left;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #007bff; /* Church's blue color */
+    }
+
+    /* Input field styles with lighter background */
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none; /* Remove borders */
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.8); /* Lighter white background for inputs */
+    }
+
+    input:hover{
+        border: 1px #555 solid;
+    }
+
+    /* Button styles with your church's red color */
+    button[type="submit"] {
+        background-color: #dc3545; /* Church's red color */
+        color: #fff;
+        padding: 15px 198px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        margin: 20px 0px;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #c82333; /* Slightly darker red on hover */
+    }
+
+    /* Login link styles with your church's blue color */
+    a {
+        color: #007bff; /* Church's blue color */
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #0367d3;
+    }
+
+    /* Inspirational message styles */
+    .inspiration {
+        margin-top: 20px;
+        font-style: italic;
+        color: #555;
+    }
+
+    .home{
+        float: left;
+        margin: 0px;
+        padding-bottom: 10px;
+        padding-right: 450px;
+    }
+
+    .home a{
+        font-weight: 700;
+        color:#dc3545;
+        text-decoration: none;
+    }
+
+}
+
+@media screen and (width: 768px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-top: 0px;
+        padding-bottom: 250px;
+        margin-top: 0px;
+        /* bottom: 100px; */
+        /* position: relative; */
+    }
+}
+
+
+@media screen and (width: 820px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-top: 0px;
+        padding-bottom: 250px;
+        margin-top: 0px;
+        /* bottom: 100px; */
+        /* position: relative; */
+    }
+}
+
+
+@media screen and (width: 1024px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-top: 0px;
+        padding-bottom: 250px;
+        margin-top: 0px;
+        margin-bottom: 250px;
+        /* position: relative; */
+    }
+}
+
+
+@media screen and (width: 912px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-top: 0px;
+        padding-bottom: 250px;
+        margin-top: 0px;
+        margin-bottom: 250px;
+        /* position: relative; */
+    }
+}
+
+
+@media screen and (width: 853px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-top: 0px;
+        padding-bottom: 250px;
+        margin-top: 0px;
+        margin-bottom: 250px;
+        /* position: relative; */
+    }
+}
+
+
+@media screen and (width: 1024px) and (height: 600px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200vh;
+        padding-top: 0px;
+        /* padding-bottom: 250px; */
+        /* margin-top: 0px; */
+        margin-bottom: 0px;
+        /* position: relative; */
+    }
+}
