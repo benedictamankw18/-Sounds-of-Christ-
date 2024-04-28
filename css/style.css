@@ -9,7 +9,7 @@
     font-family: Roboto;
     box-sizing:border-box;
 }
-  /* Default classes */
+
 .pos-abs {
     position: absolute;
 }
@@ -33,10 +33,45 @@
     background-repeat: no-repeat;
 }
 
+i{
+    color: #000;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    text-align: center;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    font-size: 12px;
+    color: #000;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    font-family: Roboto;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
 body{
     margin: 0px;
     padding: 0px;
     font-family: Roboto;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #ffffff;
+    scroll-behavior: smooth;
 }
 
 .mobile-nav, #open, #close{
@@ -50,9 +85,38 @@ body{
     font-size:60px;
     cursor:pointer
 }
+
 #open{
     font-size:30px;
     cursor:pointer
+}
+
+.drop {
+    display: none;
+    position: absolute;
+    background-color: #ccc;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 70%;
+}
+
+.drop a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.drop a:hover{
+    background-color: #fff;
+    color: #000;
+    font-weight: 700;
+    display: block;
+}
+
+.dropbtn:hover .drop {
+    display: block;
 }
 
 .header-wallpaper-container {
@@ -179,17 +243,17 @@ tr{
     text-align: center;
     padding-bottom: 20px;
     gap: 20px;
-    width: var(--widthMargin);
-    margin-left: 50px;
-    margin-right: 5%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     grid-template-columns: repeat(4, 1fr);
 }
 
 .team-member img{
     border-radius: 10px 10px 0px 0px;
     display: inline;
-    width: 300px;
-    height: 300px;
+    width: 20px;
+    height: 200px;
 }
 
 .team-member{
@@ -198,6 +262,7 @@ tr{
 
 .main{
     padding-top: 50px;
+    width: var(--fullWidth);
     text-align: center;
 }
 
@@ -227,8 +292,9 @@ tr{
     linear-gradient(180deg, #ebe9e900 0%, #d8d8d899 40%),
     linear-gradient(180deg, #ffffff78 0%, #b9b9b9cc 60%),
     linear-gradient(180deg, #ffffff00 0%, rgb(0, 0, 0) 100%);
-    height: 150px;
+    height: 180px;
     color: #000000;
+    margin-bottom: 0px;
 }
 
 .footer p{
@@ -243,7 +309,8 @@ tr{
     font-weight: 700;
 }
 
-@media screen and (min-width: 1970px) and (max-width: 2000px) {
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
     body{
         font-size: 15px;
     }
@@ -264,9 +331,9 @@ tr{
 
     .main-nav{
         width: var(--fullWidth);
-        margin-left: 23%;
+        margin-left: 2%;
         margin-right: 0%;
-        padding-top: 10px;
+        padding-top: 25px;
         margin-bottom: 0%;
         box-sizing: border-box;
     }
@@ -274,7 +341,7 @@ tr{
     .nav{
         position: absolute;
         top: 40px;
-        margin-left: 330px;
+        margin-left: 10%;
         display: inline;
     }
     
@@ -283,3275 +350,86 @@ tr{
         display:grid;
         text-align: center;
         padding-bottom: 20px;
-        gap: 25px;
-        width: var(--widthMargin);
-        margin-left: 50px;
-        margin-right: 5%;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 455px;
-        height: 455px;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 95%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-}
-
-
-@media screen and (min-width: 1950px) and (max-width: 1970px) {
-    body{
-        font-size: 15px;
-    }
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .nav{
-        position: absolute;
-        top: 40px;
-        margin-left: 330px;
-        display: inline;
-    }
-    
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 23%;
-        margin-right: 0%;
-        padding-top: 10px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-    .main-team{
-        position: relative;
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
         gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 90px;
-        margin-right: 2%;
-        grid-template-columns: repeat(4, 2fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 430px;
-        height: 430px;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 95%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-}
-
-
-@media screen and (min-width: 1920px) and (max-width: 1949px) {
-    body{
-        font-size: 15px;
-    }
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .nav{
-        position: absolute;
-        top: 40px;
-        margin-left: 330px;
-        display: inline;
-    }
-    
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 23%;
-        margin-right: 0%;
-        padding-top: 10px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-    .main-team{
-        box-sizing: border-box;
-        position: relative;
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 4%;
-        margin-right: 6%;
-        grid-template-columns: repeat(4, 2fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 430px;
-        height: 430px;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 95%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-}
-
-
-@media screen and (min-width: 1900px) and (max-width: 1919px) {
-    body{
-        font-size: 15px;
-    }
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 23%;
-        margin-right: 0%;
-        padding-top: 10px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-    .nav{
-        position: absolute;
-        top: 40px;
-        margin-left: 330px;
-        display: inline;
-    }
-    
-
-    .main-team{
-        box-sizing: border-box;
-        position: relative;
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 3%;
-        margin-right: 6%;
-        grid-template-columns: repeat(4, 2fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 430px;
-        height: 430px;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 95%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-}
-
-
-@media screen and (min-width: 1850px) and (max-width: 1899px) {
-    body{
-        font-size: 15px;
-    }
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 23%;
-        margin-right: 0%;
-        padding-top: 10px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-    .main-team{
-        box-sizing: border-box;
-        position: relative;
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 3%;
-        margin-right: 6%;
-        grid-template-columns: repeat(4, 2fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 420px;
-        height: 420px;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 95%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-}
-
-
-@media screen and (min-width: 1800px) and (max-width: 1849px) {
-    body{
-        font-size: 15px;
-    }
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 23%;
-        margin-right: 0%;
-        padding-top: 10px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-    .nav{
-        position: absolute;
-        top: 40px;
-        margin-left: 330px;
-        display: inline;
-    }
-    
-
-    .main-team{
-        box-sizing: border-box;
-        /* position: relative; */
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 2.5%;
-        margin-right: 6%;
-        grid-template-columns: repeat(4, 2fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 420px;
-        height: 420px;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 95%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-}
-
-
-@media screen and (min-width: 1750px) and (max-width: 1799px) {
-    body{
-        font-size: 15px;
-    }
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 23%;
-        margin-right: 0%;
-        padding-top: 10px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-    .nav{
-        position: absolute;
-        top: 40px;
-        margin-left: 330px;
-        display: inline;
-    }
-    
-    .main-team{
-        box-sizing: border-box;
-        /* position: relative; */
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 2.5%;
-        margin-right: 6%;
-        grid-template-columns: repeat(4, 2fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 410px;
-        height: 410px;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 95%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-}
-
-
-@media screen and (min-width: 1700px) and (max-width: 1749px) {
-    body{
-        font-size: 15px;
-    }
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 23%;
-        margin-right: 0%;
-        padding-top: 10px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-    .nav{
-        position: absolute;
-        top: 40px;
-        margin-left: 330px;
-        display: inline;
-    }    
-
-    .main-team{
-        box-sizing: border-box;
-        /* position: relative; */
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 2%;
-        margin-right: 0%;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 390px;
-        height: 410px;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 95%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-}
-
-
-@media screen and (min-width: 1600px) and (max-width: 1699px) {
-    body{
-        font-size: 15px;
-    }
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 23%;
-        margin-right: 0%;
-        padding-top: 10px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-    .nav{
-        position: absolute;
-        top: 40px;
-        margin-left: 330px;
-        display: inline;
-    }    
-
-    .main-team{
-        box-sizing: border-box;
-        /* position: relative; */
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 2%;
-        margin-right: 0%;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 370px;
-        height: 410px;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 95%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-}
-
-
-@media screen and (min-width: 1500px) and (max-width: 1599px) {
-    body{
-        font-size: 15px;
-    }
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 18%;
-        margin-right: 0%;
-        padding-top: 10px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-    .nav{
-        position: absolute;
-        top: 40px;
-        margin-left: 330px;
-        display: inline;
-    }
-    
-    .main-team{
-        box-sizing: border-box;
-        /* position: relative; */
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 2.5%;
-        margin-right: 0%;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 350px;
-        height: 410px;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 95%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-}
-
-
-@media screen and (min-width: 1400px) and (max-width: 1500px) {
-    body{
-        font-size: 15px;
-    }
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 15%;
-        margin-right: 0%;
-        padding-top: 10px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-    .nav{
-        position: absolute;
-        top: 40px;
-        margin-left: 330px;
-        display: inline;
-    }    
-    
-
-    .main-team{
-        box-sizing: border-box;
-        /* position: relative; */
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 2%;
-        margin-right: 0%;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 330px;
-        height: 410px;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 95%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-}
-
-
-@media screen and (min-width: 1250px) and (max-width: 1300px) {
-    body{
-        font-size: 15px;
-    }
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 15%;
-        margin-right: 0%;
-        padding-top: 10px;
-        margin-bottom: 0%;
-        box-sizing:border-box;
-    }
-    
-    .nav{
-        position: absolute;
-        top: 43px;
-        margin-left: 180px;
-        display: inline;
-    }
-
-    .logo img{
-        height: 50px;
-        width: 50px;
-        /* padding-top: 10px; */
-        border-radius: 50%;
-    }
-    
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-    
-    .topic{
-        box-sizing:border-box;
-        display: inline;
-        text-wrap: balance;
-        /* width: 9px; */
-    } 
-    
-    tr{
-        box-sizing: border-box;
-        width: 10px;
-        /* position: absolute; */
-    }
-    
-    .name{
-        font-size: var(--largeSizeText);
-        display: inline;
-        padding-left: 0px;
-        padding-bottom: 13x;
-        padding-right: 10px;
-        cursor: pointer;
-    }
-    
-    .main-team{
-        box-sizing: border-box;
-        /* position: relative; */
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 2%;
-        margin-right: 0%;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 290px;
-        height: 410px;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 95%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-}
-
-
-@media screen and (min-width: 1200px) and (max-width: 1250px) {
-    body{
-        font-size: 15px;
-    }
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 10%;
-        margin-right: 0%;
-        padding-top: 10px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-.nav{
-    position: absolute;
-    top: 40px;
-    margin-left: 150px;
-    display: inline;
-}
-
-    .main-team{
-        box-sizing: border-box;
-        /* position: relative; */
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 2%;
-        margin-right: 0%;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 280px;
-        height: 410px;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 94.5%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-    
-.footer p{
-    background-origin: padding-box;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-}
-
-
-@media screen and (min-width: 1150px) and (max-width: 1200px) {
-    body{
-        font-size: 15px;
-    }
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 10%;
-        margin-right: 0%;
-        padding-top: 10px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-    
-.nav{
-    position: absolute;
-    top: 40px;
-    margin-left: 120px;
-    display: inline;
-}
-
-    .main-team{
-        box-sizing: border-box;
-        /* position: relative; */
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 2%;
-        margin-right: 0%;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 260px;
-        height: 300px;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 94.5%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-    
-.footer p{
-    background-origin: padding-box;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-
-.footer p{
-    background-origin: padding-box;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-
-}
-
-@media screen and (min-width: 840px) and (max-width: 1074px) {
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 5%;
-        margin-right: 0%;
-        padding-top: 10px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-    .nav{
-        position: absolute;
-        top: 40px;
-        margin-left: 120px;
-        display: inline;
-    }
-}
-
-@media screen and (min-width: 840px) and (max-width: 1150px) {
-    body{
-        font-size: 15px;
-    }
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 10%;
-        margin-right: 0%;
-        padding-top: 10px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-    .nav{
-        position: absolute;
-        top: 40px;
-        margin-left: 120px;
-        display: inline;
-    }
-
-    .main-team{
-        display: flex;
-        box-sizing: border-box;
-        /* position: relative; */
-        justify-content: center;
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 9%;
-        margin-right: 0%;
-        grid-template-columns: repeat(3, 1fr);
-    }
-/*     
-    .push{
-        margin-left: 20%;
-        display: flex;
-        align-items: center;
-    } */
-/* 
-    .zoom__push{
-        
-    } */
-
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 260px;
-        height: 300px;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 93.5%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-    
-.footer p{
-    background-origin: padding-box;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-}
-
-
-@media screen and (min-width: 1010px) and (max-width: 1074px) {
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 5%;
-        margin-right: 0%;
-        padding-top: 10px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-    .nav{
-        position: absolute;
-        top: 40px;
-        margin-left: 120px;
-        display: inline;
-    }
-}
-
-
-/* navigation button effect */
-@media screen and (min-width: 995px) and (max-width: 1010px) {
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 5%;
-        margin-right: 0%;
-        padding-top: 10px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-    .nav{
-        position: absolute;
-        top: 40px;
-        margin-left: 90px;
-        display: inline;
-    }
-}
-
-@media screen and (min-width: 840px) and (max-width: 1010px) {
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 30%;
-        margin-right: 0%;
-        padding-top: 10px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-    .nav{
-        display: none;
-    }
-
-    #open{
-        right: 20px;
-        display: block;
-        margin-top: 40px;
-        margin-right: 10px;
-        position: absolute;
-    }
-
-    .profile img{
-        width: 40px;
-        height: 40px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 86.5%;
-        top: 40px;
-    }
-
-    .space{
-        display: block;
-        margin-top: 90px;
-    }
-    .mobile-nav{
-        display: flexbox;
-        z-index: 3;
-        background-color: #6b6a6a;
-        color: #ffffff;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    #close{
-        right: 20px;
-        display: none;
-        margin-top: 30px;
-        margin-right: 30px;
-        position: absolute;
-    }
-
-    .moblie-nav-link{
-        margin-top: 6px;
-        display: block;
-        padding: 20px;
-        /* margin-left: 40%; */
-        font-size: 25px;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-@media screen and (min-width: 740px) and (max-width: 840px) {
-    body{
-        font-size: 15px;
-    }
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 23%;
-        margin-right: 0%;
-        padding-top: 10px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-    .main-team{
-        box-sizing: border-box;
-        /* position: relative; */
-        justify-content: center;
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 9%;
-        margin-right: 0%;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 230px;
-        height: 270px;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 95%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-    
-.footer p{
-    background-origin: padding-box;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.nav{
-    display: none;
-}
-
-#open{
-    right: 20px;
-    display: block;
-    margin-top: 40px;
-    margin-right: 10px;
-    position: absolute;
-}
-
-.profile img{
-    width: 40px;
-    height: 40px;
-    border: 1px solid #000000;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.profile{
-    left: 84.5%;
-    top: 40px;
-}
-
-
-.space{
-    display: block;
-    margin-top: 90px;
-}
-.mobile-nav{
-    display: flexbox;
-    z-index: 3;
-    background-color: #6b6a6a;
-    color: #ffffff;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-#close{
-    right: 20px;
-    display: none;
-    margin-top: 30px;
-    margin-right: 30px;
-    position: absolute;
-}
-
-.moblie-nav-link{
-    margin-top: 6px;
-    display: block;
-    padding: 20px;
-    /* margin-left: 40%; */
-    font-size: 25px;
-    width: 100%;
-    text-align: center;
-}
-}
-
-
-@media screen and (min-width: 643px) and (max-width: 740px) {
-    body{
-        font-size: 15px;
-    }
-
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 10%;
-        margin-right: 0%;
-        padding-top: 10px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-        text-wrap: balance;
-    }
-
-    .main-team{
-        box-sizing: border-box;
-        /* position: relative; */
-        justify-content: center;
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 9%;
-        margin-right: 0%;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 200px;
-        height: 210px;
-    }
-    
-    .card{
-        height: auto;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 95%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-.footer p{
-    background-origin: padding-box;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.nav{
-    display: none;
-}
-
-#open{
-    right: 20px;
-    display: block;
-    margin-top: 40px;
-    margin-right: 10px;
-    position: absolute;
-}
-
-.profile img{
-    width: 40px;
-    height: 40px;
-    border: 1px solid #000000;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.profile{
-    left: 84.5%;
-    top: 40px;
-}
-
-
-.space{
-    display: block;
-    margin-top: 90px;
-}
-.mobile-nav{
-    display: flexbox;
-    z-index: 3;
-    background-color: #6b6a6a;
-    color: #ffffff;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-#close{
-    right: 20px;
-    display: none;
-    margin-top: 30px;
-    margin-right: 30px;
-    position: absolute;
-}
-
-.moblie-nav-link{
-    margin-top: 6px;
-    display: block;
-    padding: 20px;
-    /* margin-left: 40%; */
-    font-size: 25px;
-    width: 100%;
-    text-align: center;
-}
-}
-
-
-@media screen and (min-width: 600px) and (max-width: 643px) {
-    body{
-        font-size: 15px;
-    }
-
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 15%;
-        margin-right: 0%;
-        padding-top: 70px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-        text-wrap: balance;
-    }
-
-    .main-team{
-        box-sizing: border-box;
-        /* position: relative; */
-        justify-content: center;
-        display:grid;
-        align-items: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 9%;
-        margin-right: 0%;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 180px;
-        height: 210px;
-    }
-    
-    .card{
-        height: auto;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 95%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-    
-.footer p{
-    background-origin: padding-box;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.nav{
-    display: none;
-}
-
-#open{
-    right: 20px;
-    display: block;
-    margin-top: 20px;
-    margin-right: 10px;
-    position: absolute;
-}
-
-.profile img{
-    width: 40px;
-    height: 40px;
-    border: 1px solid #000000;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.profile{
-    left: 82.5%;
-    top: 20px;
-}
-
-
-.space{
-    display: block;
-    margin-top: 90px;
-}
-.mobile-nav{
-    display: flexbox;
-    z-index: 3;
-    background-color: #6b6a6a;
-    color: #ffffff;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-#close{
-    right: 20px;
-    display: none;
-    margin-top: 30px;
-    margin-right: 30px;
-    position: absolute;
-}
-
-.moblie-nav-link{
-    margin-top: 6px;
-    display: block;
-    padding: 20px;
-    /* margin-left: 40%; */
-    font-size: 25px;
-    width: 100%;
-    text-align: center;
-}
-}
-
-
-@media screen and (min-width: 530px) and (max-width: 600px) {
-    body{
-        font-size: 15px;
-    }
-
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 10%;
-        margin-right: 0%;
-        padding-top: 70px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-        text-wrap: balance;
-    }
-
-    .main-team{
-        box-sizing: border-box;
-        /* position: relative; */
-        justify-content: center;
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 9%;
-        margin-right: 0%;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 160px;
-        height: 210px;
-    }
-    
-    .card{
-        height: auto;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 95%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-    
-.footer p{
-    background-origin: padding-box;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.nav{
-    display: none;
-}
-
-#open{
-    right: 20px;
-    display: block;
-    margin-top: 20px;
-    margin-right: 10px;
-    position: absolute;
-}
-
-.profile img{
-    width: 40px;
-    height: 40px;
-    border: 1px solid #000000;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.profile{
-    left: 80.5%;
-    top: 20px;
-}
-
-
-.space{
-    display: block;
-    margin-top: 90px;
-}
-.mobile-nav{
-    display: flexbox;
-    z-index: 3;
-    background-color: #6b6a6a;
-    color: #ffffff;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-#close{
-    right: 20px;
-    display: none;
-    margin-top: 30px;
-    margin-right: 30px;
-    position: absolute;
-}
-
-.moblie-nav-link{
-    margin-top: 6px;
-    display: block;
-    padding: 20px;
-    /* margin-left: 40%; */
-    font-size: 25px;
-    width: 100%;
-    text-align: center;
-}
-}
-
-
-@media screen and (min-width: 500px) and (max-width: 530px) {
-    body{
-        font-size: 15px;
-    }
-
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 10%;
-        margin-right: 0%;
-        padding-top: 70px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-        text-wrap: balance;
-    }
-
-    .main-team{
-        box-sizing: border-box;
-        /* position: relative; */
-        justify-content: center;
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 9%;
-        margin-right: 0%;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 150px;
-        height: 210px;
-    }
-    
-    .card{
-        height: auto;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 95%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-    
-.footer p{
-    background-origin: padding-box;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.nav{
-    display: none;
-}
-
-#open{
-    right: 20px;
-    display: block;
-    margin-top: 20px;
-    margin-right: 10px;
-    position: absolute;
-}
-
-.profile img{
-    width: 40px;
-    height: 40px;
-    border: 1px solid #000000;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.profile{
-    left: 79.0%;
-    top: 20px;
-}
-
-
-.space{
-    display: block;
-    margin-top: 90px;
-}
-.mobile-nav{
-    display: flexbox;
-    z-index: 3;
-    background-color: #6b6a6a;
-    color: #ffffff;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-#close{
-    right: 20px;
-    display: none;
-    margin-top: 30px;
-    margin-right: 30px;
-    position: absolute;
-}
-
-.moblie-nav-link{
-    margin-top: 6px;
-    display: block;
-    padding: 20px;
-    /* margin-left: 40%; */
-    font-size: 25px;
-    width: 100%;
-    text-align: center;
-}
-
-}
-
-
-@media screen and (min-width: 430px) and (max-width: 500px) {
-    body{
-        font-size: 15px;
-    }
-
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 10%;
-        margin-right: 0%;
-        padding-top: 70px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-        text-wrap: balance;
-    }
-
-    .main-team{
-        box-sizing: border-box;
-        /* position: relative; */
-        justify-content: center;
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 9%;
-        margin-right: 0%;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 200px;
-        height: 210px;
-    }
-    
-    .card{
-        height: auto;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: inline;
-        padding-right: 10px;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 95%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-.footer p{
-    background-origin: padding-box;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.nav{
-    display: none;
-}
-
-#open{
-    right: 20px;
-    display: block;
-    margin-top: 20px;
-    margin-right: 10px;
-    position: absolute;
-}
-
-.profile img{
-    width: 40px;
-    height: 40px;
-    border: 1px solid #000000;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.profile{
-    left: 77.0%;
-    top: 20px;
-}
-
-
-.space{
-    display: block;
-    margin-top: 90px;
-}
-.mobile-nav{
-    display: flexbox;
-    z-index: 3;
-    background-color: #6b6a6a;
-    color: #ffffff;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-#close{
-    right: 20px;
-    display: none;
-    margin-top: 30px;
-    margin-right: 30px;
-    position: absolute;
-}
-
-.moblie-nav-link{
-    margin-top: 6px;
-    display: block;
-    padding: 20px;
-    /* margin-left: 40%; */
-    font-size: 25px;
-    width: 100%;
-    text-align: center;
-}
-}
-
-
-@media screen and (min-width: 390px) and (max-width: 430px) {
-    body{
-        font-size: 15px;
-    }
-
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 19%;
-        margin-right: 0%;
-        padding-top: 70px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-        text-wrap: balance;
-        
-    }
-
-    .main-team{
-        box-sizing: border-box;
-        /* position: relative; */
-        justify-content: center;
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 9%;
-        margin-right: 0%;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 180px;
-        height: 210px;
-    }
-    
-    .card{
-        height: auto;
-    }
-
-    .logo img{
-        margin-left: 20%;
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: block;
-        padding-right: 10px;
-        justify-content: center;
-    }
-
-    .profile img{
-        width: 60px;
-        height: 60px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 95%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-    
-.footer p{
-    background-origin: padding-box;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.nav{
-    display: none;
-}
-
-#open{
-    right: 20px;
-    display: block;
-    margin-top: 20px;
-    margin-right: 10px;
-    position: absolute;
-}
-
-.profile img{
-    width: 40px;
-    height: 40px;
-    border: 1px solid #000000;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.profile{
-    left: 73.5%;
-    top: 20px;
-}
-
-
-.space{
-    display: block;
-    margin-top: 90px;
-}
-.mobile-nav{
-    display: flexbox;
-    z-index: 3;
-    background-color: #6b6a6a;
-    color: #ffffff;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-#close{
-    right: 20px;
-    display: none;
-    margin-top: 30px;
-    margin-right: 30px;
-    position: absolute;
-}
-
-.moblie-nav-link{
-    margin-top: 6px;
-    display: block;
-    padding: 20px;
-    /* margin-left: 40%; */
-    font-size: 25px;
-    width: 100%;
-    text-align: center;
-}
-}
-
-
-@media screen and (min-width: 330px) and (max-width: 390px) {
-    body{
-        font-size: 15px;
-    }
-
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 15%;
-        margin-right: 0%;
-        padding-top: 70px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-    .main-team{
-        box-sizing: border-box;
-        /* position: relative; */
-        justify-content: center;
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 9%;
-        margin-right: 0%;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 150px;
-        height: 210px;
-    }
-    
-    .card{
-        height: auto;
-    }
-
-    .logo img{
-        margin-left: 23%;
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: block;
-        padding-right: 10px;
-        justify-content: center;
-    }
-
-    .profile img{
-        width: 40px;
-        height: 40px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 95%;
-        top: 40px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-    
-.footer p{
-    background-origin: padding-box;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 700;
-}
-
-
-.nav{
-    display: none;
-}
-
-#open{
-    right: 20px;
-    display: block;
-    margin-top: 20px;
-    margin-right: 10px;
-    position: absolute;
-}
-
-.profile img{
-    width: 40px;
-    height: 40px;
-    border: 1px solid #000000;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.profile{
-    left: 70.5%;
-    top: 20px;
-}
-
-
-.space{
-    display: block;
-    margin-top: 90px;
-}
-.mobile-nav{
-    display: flexbox;
-    z-index: 3;
-    background-color: #6b6a6a;
-    color: #ffffff;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-#close{
-    right: 20px;
-    display: none;
-    margin-top: 30px;
-    margin-right: 30px;
-    position: absolute;
-}
-
-.moblie-nav-link{
-    margin-top: 6px;
-    display: block;
-    padding: 20px;
-    /* margin-left: 40%; */
-    font-size: 25px;
-    width: 100%;
-    text-align: center;
-}
-}
-
-@media screen and (min-width: 330px) and (max-width: 360px) {
-    .nav{
-        display: none;
-    }
-
-    #open{
-        right: 20px;
-        display: block;
-        margin-top: 20px;
-        margin-right: 10px;
-        position: absolute;
-    }
-
-    .profile img{
-        width: 40px;
-        height: 40px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 68.5%;
-        top: 20px;
-    }
-
-    .main-nav{
-        width: var(--fullWidth);
-        margin-left: 10%;
-        margin-right: 0%;
-        padding-top: 70px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-    .logo img{
-        margin-left: 26%;
-    }
-
-    
-    .space{
-        display: block;
-        margin-top: 90px;
-    }
-    .mobile-nav{
-        display: flexbox;
-        z-index: 3;
-        background-color: #6b6a6a;
-        color: #ffffff;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    #close{
-        right: 20px;
-        display: none;
-        margin-top: 30px;
-        margin-right: 30px;
-        position: absolute;
-    }
-
-    .moblie-nav-link{
-        margin-top: 6px;
-        display: block;
-        padding: 20px;
-        /* margin-left: 40%; */
-        font-size: 25px;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-@media screen and (min-width: 150px) and (max-width: 330px) {
-    body{
-        font-size: 15px;
-    }
-
-    .header-wallpaper-container {
-        width: var(--fullWidth);
-        height: var(--fullWidth);
-        color: #ffffffff;
-        top: 0%;
-        left: 0%;
-        opacity: 1;
-        z-index: 0;
-        transform: rotate(0deg);
-        overflow: hidden;
-        background-image: url(./../image/wallpaper.jpg);
-        align-items: center;
-        font-size: 15px;
-    } 
-
-    .main-nav{
-        width: auto;
-        margin-left: 20%;
-        margin-right: 0%;
-        padding-top: 70px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-    n{
-        display: block;
-    }
-
-    .main-team{
-        box-sizing: border-box;
-        /* position: relative; */
-        justify-content: center;
-        display:grid;
-        text-align: center;
-        padding-bottom: 10px;
-        gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 9%;
-        margin-right: 0%;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
-    .team-member img{
-        border-radius: 10px 10px 0px 0px;
-        display: inline;
-        width: 150px;
-        height: 210px;
-    }
-    
-    .card{
-        height: auto;
-    }
-
-    .logo img{
-        margin-left: 29%;
-        height: 80px;
-        width: 80px;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: block;
-        padding-right: 10px;
-        
-    }
-
-    .profile img{
-        width: 40px;
-        height: 40px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .profile{
-        left: 60%;
-        top: 20px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-        text-wrap: balance;
-        text-align: center;
-    }
-    
-    .footer p{
-        background-origin: padding-box;
-        text-align: center;
-        font-size: 12px;
-        font-weight: 700;
-    }
-
-    .nav{
-        display: none;
-    }
-
-    #open{
-        right: 20px;
-        display: block;
-        margin-top: 20px;
-        margin-right: 10px;
-        position: absolute;
-    }
-
-    
-    .space{
-        display: block;
-        margin-top: 90px;
-    }
-    .mobile-nav{
-        display: flexbox;
-        z-index: 3;
-        background-color: #6b6a6a;
-        color: #ffffff;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    #close{
-        right: 20px;
-        display: none;
-        margin-top: 30px;
-        margin-right: 30px;
-        position: absolute;
-    }
-
-    .moblie-nav-link{
-        margin-top: 6px;
-        display: block;
-        padding: 20px;
-        /* margin-left: 40%; */
-        font-size: 25px;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-@media screen and (min-width: 220px) and (max-width: 250px) {
-    .main-nav{
-        width: auto;
-        margin-left: 15%;
-        margin-right: 0%;
-        padding-top: 70px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-    .profile{
-        left: 55%;
-        top: 20px;
-    }
-
-    
-    #open{
-        right: 20px;
-        display: block;
-        margin-top: 20px;
-        margin-right: 10px;
-        position: absolute;
-    }
-
-    
-    .space{
-        display: block;
-        margin-top: 90px;
-    }
-    .mobile-nav{
-        display: flexbox;
-        z-index: 3;
-        background-color: #6b6a6a;
-        color: #ffffff;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    #close{
-        right: 20px;
-        display: none;
-        margin-top: 30px;
-        margin-right: 30px;
-        position: absolute;
-    }
-
-    .moblie-nav-link{
-        margin-top: 6px;
-        display: block;
-        padding: 20px;
-        /* margin-left: 40%; */
-        font-size: 25px;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-
-@media screen and (min-width: 195px) and (max-width: 220px) {
-    
-    .profile{
-        left: 50%;
-        top: 20px;
-    }
-
-    .main-nav{
-        width: auto;
-        margin-left: 10%;
-        margin-right: 0%;
-        padding-top: 70px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-
-    #open{
-        right: 20px;
-        display: block;
-        margin-top: 20px;
-        margin-right: 10px;
-        position: absolute;
-    }
-
-    
-    .space{
-        display: block;
-        margin-top: 90px;
-    }
-    .mobile-nav{
-        display: flexbox;
-        z-index: 3;
-        background-color: #6b6a6a;
-        color: #ffffff;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    #close{
-        right: 20px;
-        display: none;
-        margin-top: 30px;
-        margin-right: 30px;
-        position: absolute;
-    }
-
-    .moblie-nav-link{
-        margin-top: 6px;
-        display: block;
-        padding: 20px;
-        /* margin-left: 40%; */
-        font-size: 25px;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-
-@media screen and (min-width: 175px) and (max-width: 195px) {
-    
-    .profile{
-        left: 45%;
-        top: 20px;
-    }
-
-    .main-nav{
-        width: auto;
-        margin-left: 3%;
-        margin-right: 0%;
-        padding-top: 70px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
-    }
-
-
-    #open{
-        right: 20px;
-        display: block;
-        margin-top: 20px;
-        margin-right: 10px;
-        position: absolute;
-    }
-
-    
-    .space{
-        display: block;
-        margin-top: 90px;
-    }
-    .mobile-nav{
-        display: flexbox;
-        z-index: 3;
-        background-color: #6b6a6a;
-        color: #ffffff;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    #close{
-        right: 20px;
-        display: none;
-        margin-top: 30px;
-        margin-right: 30px;
-        position: absolute;
-    }
-
-    .moblie-nav-link{
-        margin-top: 6px;
-        display: block;
-        padding: 20px;
-        /* margin-left: 40%; */
-        font-size: 25px;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-
-@media screen and (min-width: 150px) and (max-width: 175px) {
-    body, p, h3,a,td{
-        font-size: 13px;
-    }
-    .name{
-        font-size: 12px;
-    }
-    .profile{
-        left: 30%;
-        top: 20px;
-    }
-
-    .main-nav{
-        width: auto;
+        width: 80%;
         margin-left: 8%;
-        margin-right: 0%;
-        padding-top: 70px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
+        margin-right: 10%;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .team-member img{
+        border-radius: 10px 10px 0px 0px;
+        display: inline;
+        width: 200px;
+        height: 150px;
     }
 
-    
     .logo img{
-        height: 50px;
-        width: 50px;
-        /* padding-top: 10px; */
+        height: 60px;
+        width: 60px;
+        top: 0px;
     }
 
-    #open{
-        right: 20px;
-        display: block;
-        margin-top: 20px;
-        margin-right: 10px;
-        position: absolute;
+    .logo{
+        display: inline;
+        padding-right: 10px;
+    }
+
+    .profile img{
+        width: 40px;
+        height: 40px;
+        border: 1px solid #000000;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .profile{
+        left: 90%;
+        top: 40px;
+    }
+
+    .nav a{
+        font-size: 15px;
+    }
+
+    .name{
+        font-size: 15px;
     }
 
     
-    .space{
-        display: block;
-        margin-top: 90px;
-    }
-    .mobile-nav{
-        display: flexbox;
-        z-index: 3;
-        background-color: #6b6a6a;
-        color: #ffffff;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    #close{
-        right: 20px;
-        display: none;
-        margin-top: 30px;
-        margin-right: 30px;
-        position: absolute;
-    }
-
-    .moblie-nav-link{
-        margin-top: 6px;
-        display: block;
-        padding: 20px;
-        /* margin-left: 40%; */
-        font-size: 25px;
-        width: 100%;
-        text-align: center;
-    }
+.drop {
+    display: none;
+    position: absolute;
+    background-color: #ccc;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 70%;
 }
 
-@media screen and (max-width: 150px) {
-    body, p, h3,a,td{
-        font-size: 10px;
-    }
-    .name{
-        font-size: 8px;
-    }
-    .profile{
-        left: 30%;
-        top: 20px;
-    }
+.drop a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
 
+.drop a:hover{
+    background-color: #fff;
+    color: #000;
+    font-weight: 700;
+}
+
+.dropbtn:hover .drop {
+    display: block;
+}
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body{
+        font-size: 15px;
+    }
     .header-wallpaper-container {
         width: var(--fullWidth);
         height: var(--fullWidth);
@@ -3571,162 +449,222 @@ tr{
         width: var(--fullWidth);
         margin-left: 2%;
         margin-right: 0%;
-        padding-top: 70px;
+        padding-top: 10px;
         margin-bottom: 0%;
         box-sizing: border-box;
-        text-align: center
+    }
+
+    .nav{
+        position: absolute;
+        width: var(--fullWidth);
+        top: 95px;
+        margin-left: -20px;
+        display: inline-block;
+        /* align-items: center;
+        justify-items: center; */
+    }
+
+    .headingText1{
+        padding-top: 50px;
     }
 
     .main-team{
-        box-sizing: border-box;
-        /* position: relative; */
-        justify-content: center;
         display:grid;
         text-align: center;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
         gap: 20px;
-        width: var(--widthMargin);
-        margin-left: 9%;
-        margin-right: 0%;
-        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        grid-template-columns: repeat(4, 23%);
+    }
+    
+    .team-member img{
+        border-radius: 10px 10px 0px 0px;
+        display: inline;
+        width: 150px;
+        height: 150px;
+    }
+
+    .logo img{
+        height: 60px;
+        width: 60px;
+        padding-top: 0px;
+    }
+
+    .logo{
+        display: inline;
+        padding-right: 10px;
+    }
+
+    .profile img{
+        width: 40px;
+        height: 40px;
+        border: 1px solid #000000;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .profile{
+        left: 90%;
+        top: 40px;
+    }
+
+    .nav a{
+        font-size: 15px;
+    }
+
+    .name{
+        font-size: 12px;
+    }
+
+        
+    .drop {
+        display: none;
+        position: absolute;
+        background-color: #ccc;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 10;
+        margin-left: 33%;
+    }
+
+    .drop a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .drop a:hover{
+        background-color: #fff;
+        color: #000;
+        font-weight: 700;
+        display: block;
+    }
+
+    .dropbtn:hover .drop {
+        display: block;
+    }
+
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .header-wallpaper-container {
+        background-image: url(./../image/moblie-veiw.png);
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .profile{
+        left:  80%;
+        top: 20px;
+    }
+
+
+    #open{
+        left: 90%;
+        display: block;
+        top: 20px;
+        position: relative;
+    }
+
+    
+    .space{
+        display: block;
+        margin-top: 100px;
+    }
+
+    .mobile-nav{
+        animation: example 0.3s linear 0s 1 alternate;
+        right: 0px;
+        display: flexbox;
+        z-index: 3;
+        backdrop-filter: blur(10px);
+        color: #ffff;
+        width: 60%;
+        height: 100%;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @keyframes example {
+        from {width: 0%;}
+        to {width: 60%;}
+      }
+
+    @keyframes close {
+        from {right: -20px;}
+        to {right: 20px;}
+    }
+
+    #close{
+        animation: close 0.3s linear 0s 1 alternate;
+        right: 20px;
+        display: none;
+        margin-top: 10px;
+        margin-right: 20px;
+        position: absolute;
+    }
+
+    .moblie-nav-link{
+        margin-top: 40px;
+        display: block;
+        margin-left: 20px;
+        font-size: 20px;
+        width: 80%;
+        padding-left: 10px;
+        text-align: left;
+        border-bottom: 1px #ffffff  solid;
+    }
+
+    .main-team{
+        display:grid;
+        text-align: center;
+        padding-bottom: 20px;
+        gap: 20px;
+        width: 80%;
+        margin-left: 8%;
+        margin-right: 10%;
+        grid-template-columns: repeat(2, 50%);
     }
     
     .team-member img{
         border-radius: 10px 10px 0px 0px;
         display: inline;
         width: 100px;
-        height: 210px;
+        height: 200px;
     }
+
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
     
-    .card{
-        height: auto;
+.header-wallpaper-container {
+    background-image: url(./../image/moblie\ wallpaper.jpg);
     }
 
-    .logo img{
-        height: 80px;
-        width: 80px;
-        margin-left: 0%;
-        /* padding-top: 10px; */
-    }
-
-    .logo{
-        display: block;
-        padding-right: 10px;
-        text-align: center;
-    }
-
-    .profile img{
-        width: 40px;
-        height: 40px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        cursor: pointer;
+    .nav{
+        display: none;
     }
 
     .profile{
-        left: 20%;
+        left:  80%;
         top: 20px;
-    }
-
-    .nav a{
-        font-size: 15px;
-    }
-
-    .name{
-        font-size: 15px;
-    }
-
-.footer p{
-    background-origin: padding-box;
-    text-align: center;
-    font-size: 11px;
-    font-weight: 700;
-}
-
-.main-nav{
-    width: auto;
-    margin-left: 8%;
-    margin-right: 0%;
-    padding-top: 70px;
-    margin-bottom: 0%;
-    box-sizing: border-box;
-}
-
-.logo img{
-    height: 50px;
-    width: 50px;
-    /* padding-top: 10px; */
-}
-
-#open{
-    right: 20px;
-    display: block;
-    margin-top: 20px;
-    margin-right: 10px;
-    position: absolute;
-}
-
-
-.space{
-    display: block;
-    margin-top: 90px;
-}
-.mobile-nav{
-    display: flexbox;
-    z-index: 3;
-    background-color: #6b6a6a;
-    color: #ffffff;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-#close{
-    right: 20px;
-    display: none;
-    margin-top: 30px;
-    margin-right: 30px;
-    position: absolute;
-}
-
-.moblie-nav-link{
-    margin-top: 6px;
-    display: block;
-    padding: 20px;
-    /* margin-left: 40%; */
-    font-size: 25px;
-    width: 100%;
-    text-align: center;
-}
-}
-
-
-@media screen and (min-width: 5px) and (max-width: 120px) {
-    
-    .profile{
-        left: 10%;
-        top: 20px;
-    }
-
-    .main-nav{
-        width: auto;
-        margin-left: 3%;
-        margin-right: 0%;
-        padding-top: 70px;
-        margin-bottom: 0%;
-        box-sizing: border-box;
     }
 
 
     #open{
-        right: 20px;
+        color: #ffffff;
+        left: 92%;
         display: block;
-        margin-top: 20px;
-        margin-right: 10px;
-        position: absolute;
+        top: 20px;
+        position: relative;
     }
 
     
@@ -3734,36 +672,192 @@ tr{
         display: block;
         margin-top: 90px;
     }
+    n{
+        padding-top: 0px;
+        display: block;
+        margin-top: 0px;
+        margin-left: 80px;
+        margin-right: 20px;
+        position: absolute;
+
+    }
     .mobile-nav{
+        animation: example 0.3s linear 0s 1 alternate;
+        right: 0px;
         display: flexbox;
-        z-index: 3;
-        background-color: #6b6a6a;
-        color: #ffffff;
-        width: 100%;
+        z-index: 30;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        color: #ffff;
+        width: 60%;
         height: 100%;
         position: fixed;
         justify-content: center;
         align-items: center;
-        
+    }
+
+    @keyframes example {
+        from {width: 0%;}
+        to {width: 60%;}
+      }
+
+    @keyframes close {
+        from {right: -20px;}
+        to {right: 20px;}
+    }
+
+      
+    #close{
+        animation: close 0.3s linear 0s 1 alternate;
+        right: 20px;
+        display: none;
+        margin-top: 10px;
+        margin-right: 20px;
+        position: absolute;
+        color: #ffffff;
+    }
+
+    .moblie-nav-link{
+        margin-top: 50px;
+        display: block;
+        margin-left: 20px;
+        font-size: 18px;
+        width: 80%;
+        padding-left: 10px;
+        text-align: left;
+        border-bottom: 1px #ffffff  solid;
+    }
+
+    .main-team{
+        display:grid;
+        text-align: center;
+        padding-bottom: 20px;
+        gap: 20px;
+        width: 80%;
+        margin-left: 20%;
+        margin-right: 20%;
+        grid-template-columns: repeat(1, 80%);
+    }
+    
+    .team-member img{
+        border-radius: 10px 10px 0px 0px;
+        display: inline;
+        width: 100%;
+        height: 250px;
+    }
+
+}
+
+
+@media screen and (min-width: 100px) and (max-width: 319px) {
+    .header-wallpaper-container {
+        background-image: url(./../image/moblie\ wallpaper.jpg);
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .profile{
+        left:  70%;
+        top: 20px;
+    }
+
+    #open{
+        left: 85%;
+        display: block;
+        top: 20px;
+        position: relative;
+    }
+
+    .space{
+        display: block;
+        margin-top: 100px;
+    }
+
+    .name{
+        font-size: var(--largeSizeText);
+        display: inline;
+        margin-left: 1%;
+        padding-left: 15px;
+        padding-bottom: 13x;
+        padding-right: 0px;
+        cursor: pointer;
+    }
+
+    n{
+        padding-left: 10%;
+        padding-top: 0px;
+        display: block;
+        margin-top: 0px;
+        margin-left: 25px;
+        margin-right: 20px;
+        position: absolute;
+        text-align: center;
+    }
+
+    .mobile-nav{
+        animation: example 0.3s linear 0s 1 alternate;
+        right: 0px;
+        display: flexbox;
+        z-index: 30;
+        backdrop-filter: blur(10px);
+        color: #ffff;
+        width: 60%;
+        height: 100%;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @keyframes example {
+        from {width: 0%;}
+        to {width: 60%;}
     }
 
     #close{
         right: 20px;
         display: none;
-        margin-top: 30px;
-        margin-right: 30px;
+        margin-top: 10px;
+        margin-right: 20px;
         position: absolute;
+        
     }
 
     .moblie-nav-link{
-        margin-top: 6px;
+        margin-top: 30px;
         display: block;
-        padding: 20px;
-        /* margin-left: 40%; */
-        font-size: 25px;
-        width: 100%;
+        margin-left: 10px;
+        font-size: 16px;
+        width: 80%;
+        padding-left: 5px;
+        text-align: left;
+        border-bottom: 1px #ffffff  solid;
+    }
+
+    .main-team{
+        display:grid;
         text-align: center;
+        padding-bottom: 20px;
+        gap: 20px;
+        width: 80%;
+        margin-left: 20%;
+        margin-right: 10%;
+        grid-template-columns: repeat(1, 80%);
+    }
+    
+    .team-member img{
+        border-radius: 10px 10px 0px 0px;
+        display: inline;
+        width: 200px;
+        height: 200px;
+    }
+
+    .logo img{
+        display: block;
+        justify-items:auto;
+        margin-left: 25%;
+        margin-top: 20px;
+
     }
 }
-
-

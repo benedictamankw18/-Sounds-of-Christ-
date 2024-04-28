@@ -10,20 +10,22 @@
         <link rel="stylesheet" href="./css/animation.css" >
         <link rel="preconnect" href="https://fonts.googleapis.com" >
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
 
     </head>
     <body>
         <header>
             <div class="mobile-nav" id="mobile-nav">
                 <a href="javascript:void(0)" id="close" onclick="closeNav()">&times;</a>
-                <!-- <span class="nav-link">ADMIN</span> -->
                 <span class="space"></span>
                 <a href="./html/login.html" class="moblie-nav-link" onclick="mobileClose()">LOGIN</a>
                 <a href="#mission" class="moblie-nav-link" onclick="mobileClose()">MISSION</a>
                 <a href="#team" class="moblie-nav-link" onclick="mobileClose()">ABOUT</a>
                 <a href="./html/register.html" class="moblie-nav-link" onclick="mobileClose()">REGISTER</a>
                 <a href="#" class="moblie-nav-link" onclick="mobileClose()">APPOINTMENT</a>
-                
+                <a href="./html/image.html" class="moblie-nav-link" onclick="mobileClose()">GALLERY</a>
             </div>
 
         <div class="header-wallpaper-container bg-no-repeat bg-crop ">
@@ -32,10 +34,10 @@
             <table class="main-nav ">
                 <td class="topic">
                     <td class="logo">
-                        <a href="#">
+                        <a href="./index.html">
                         <img src="./image/mainLogo.jpeg" title="Christ Apostolic Church - Sounds of Christ" alt="Christ Apostolic Church - Sounds of Christ">
                     </a>
-                        <td class="name">Christ Apostolic Church -<n> Sounds of Christ</n></td>
+                       <a href="./index.html"><td class="name">Christ Apostolic Church -<n> Sounds of Christ</n></td></a> 
                     </td>
                 </td>
                 <td class="nav">
@@ -44,7 +46,13 @@
                     <a href="#mission" class="nav-link">MISSION</a>
                     <a href="#team" class="nav-link">ABOUT</a>
                     <a href="./html/register.html" class="nav-link">REGISTER</a>
-                    <a href="#" class="nav-link">APPOINTMENT</a>
+                    <span class="dropbtn">
+                    <a href="#" class="nav-link more" id="more" onclick="drop()">MORE<i class="fa fa-angle-double-down" style="color: white;" aria-hidden="true"></i></a>
+                    <div class="drop" id="drop">
+                        <a href="#" class="nav-link " id="drop-down">APPOINTMENT</a>
+                        <a href="./html/image.html" class="nav-link " id="drop-down">GALLERY</a>
+                    </div>
+                    </span>
                 </td>
             </table>
 
@@ -164,10 +172,12 @@
 
         <footer class="footer">
             <p>&copy; <span id="date"></span> CAC - Sounds Of Christ</p>
-            <a href="#"><i class="fab fa-facebook-f" title="facebook"></i></a>&nbsp;&nbsp;
-            <a href="#"><i class="fab fa-twitter" title="twitter"></i></a>&nbsp;&nbsp;
-            <a href="#"><i class="fab fa-instagram" title="instagram"></i></a>&nbsp;&nbsp;
-            <a href="#"><i class="fab fa-youtube" title="youtube"></i></a>
+            <span id="footer">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true" title="facebook"></i></a>&nbsp;&nbsp;
+                <a href="https://www.X.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true" title="twitter"></i></a>&nbsp;&nbsp;
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true" title="instagram"></i></a>&nbsp;&nbsp;
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube" aria-hidden="true" title="youtube"></i></a>
+            </span>
             <p>A powerful evangelical verse goes here</p>
         </footer>
     </body>

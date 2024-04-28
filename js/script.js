@@ -1,4 +1,3 @@
-
 function openNav() {
     document.getElementById("mobile-nav").style.display = "block";
     document.getElementById("open").style.display = "none";
@@ -24,3 +23,19 @@ var date = new Date();
 var c_year = date.getFullYear();
 // console.log("Year "+c_year);
 document.getElementById("date").innerText=c_year;
+
+function drop() {
+    document.getElementById("drop-down").style.display = "block";
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("drop");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
